@@ -1,0 +1,40 @@
+@use '@angular/material' as mat;
+
+:host {
+  .menubar-button-group {
+    -webkit-app-region: no-drag;
+  }
+
+  .window-bar {
+    height: 24px;
+    -webkit-app-region: drag;
+  }
+
+  .icon-display {
+    transform: scale(0.4);
+    transition: 0.3s;
+    background-color: #121212;
+    color: #121212;
+  }
+
+  .icon-display:hover {
+    transition: 0.3s;
+  }
+
+  .success:hover {
+    background-color: mat.get-color-from-palette(mat.$green-palette, 500);
+    color: black;
+  }
+
+  .danger:hover {
+    background-color: mat.get-color-from-palette(mat.$red-palette, 500);
+    color: black;
+  }
+
+  .warn:hover {
+    background-color: mat.get-color-from-palette(mat.$orange-palette, 500);
+    color: black;
+  }
+}
+
+

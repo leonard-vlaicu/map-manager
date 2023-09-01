@@ -1,0 +1,16 @@
+<mat-toolbar class="window-bar">
+    <span style="flex: 1 1 auto"></span>
+    <div class="menubar-button-group">
+        <button mat-icon-button class="icon-display success" (click)="minimize()">
+            <mat-icon>minimize</mat-icon>
+        </button>
+        <button mat-icon-button class="icon-display warn" (click)="maximize()">
+            <mat-icon>crop_square</mat-icon>
+        </button>
+        <button mat-icon-button class="icon-display danger" (click)="close()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
